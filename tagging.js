@@ -81,6 +81,7 @@
             "pre-tags-separator": ", ",                     // By default, you must put new tags using a new line
             "tag-box-class": "tagging",                     // Class of the tag box
             "tag-char": "#",                                // Single Tag char
+            "no-duplicate-tag-char": false,                 // True to remove a tag char typed by the user
             "tag-class": "tag",                             // Single Tag class
             "tags-input-name": "tag",                       // Name to use as name="" in single tags (by default tag[])
             "tag-on-blur": true,                            // Add the current tag if user clicks away from type-zone
@@ -129,6 +130,11 @@
             // If case-sensitive is true, write everything in lowercase
             if ( ! self.config[ "case-sensitive" ] ) {
                 text = text.toLowerCase();
+            }
+
+            // If tag-char already given remove it
+            if ( self.config[ "no-duplicate-tag-char" ] && text.charAt(0) === self.config[ "tag-char" ] ) {
+                text = text.substring(1);
             }
 
             // Checking if text is a Forbidden Word
