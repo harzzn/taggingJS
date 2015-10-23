@@ -308,7 +308,7 @@ a little description and the default value:
 | **pre-tags-separator** | `String` | `", "` | This is used to `split` the initial text and add `preexistint-tag`. By default, you must put new tags using a comma and a space (`", "`). |
 | **tag-box-class** | `String` | `"tagging"` | Class of the tag box. |
 | **tag-char** | `String` | `"#"` | Single Tag char. |
-| **no-duplicate-tag-char** | `Boolean` | `"#"` | True to remove a tag char typed by the user. |
+| **no-duplicate-tag-char** | `Boolean` | `false` | True to remove a tag char typed by the user. |
 | **tag-class** | `String` | `"tag"` | Single Tag class. |
 | **tag-on-blur** | `Boolean` | `true` | If `true`, clicking away from the `$type_zone` will add a new tag. |
 | **tags-input-name** | `String` | `"tag"` | Name to use as `name=""` in single tags' input. By default, all tags being passed as array like `tag[]`. |
