@@ -309,7 +309,6 @@ a little description and the default value:
 | **tag-box-class** | `String` | `"tagging"` | Class of the tag box. |
 | **tag-box-editable-class** | `String` | `"editable"` | Class of the tag box when editable, used together with tags-limit option for css targeting. |
 | **tag-char** | `String` | `"#"` | Single Tag char. |
-| **no-duplicate-tag-char** | `String` | `"#"` | True to remove a tag char typed by the user. |
 | **tag-class** | `String` | `"tag"` | Single Tag class. |
 | **tag-on-blur** | `Boolean` | `true` | If `true`, clicking away from the `$type_zone` will add a new tag. |
 | **tags-input-name** | `String` | `"tag"` | Name to use as `name=""` in single tags' input. By default, all tags being passed as array like `tag[]`. |
